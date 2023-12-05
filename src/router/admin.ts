@@ -1,4 +1,5 @@
 import products from "./products";
+import brands from "../router/brand"
 export default {
   path: "/admin",
   name: "admin",
@@ -9,6 +10,7 @@ export default {
       name: "admin_dashboard",
       component: () => import("@/views/CategoryView.vue"),
     },
-    products
+    products,
+    brands
   ],
 };
